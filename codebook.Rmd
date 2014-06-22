@@ -1,0 +1,39 @@
+Getting data of Human Activity from accelerometers and gyroscopes within Samsung Smartphones and cleaning the data into a Tidy Dataset
+========================================================
+
+Mark Rigby
+
+
+Background
+-----------
+
+From 30 volunteers wearing Samsung Galaxy S II phones containing accelerometers and gyroscopes, six activities were monitored:
+* Walking
+* Walking downstairs
+* Walking upstiars
+* Sitting
+* Standing
+* Laying
+
+The metrics; 3-axial linear acceleration and 3-axial angular velocity were measured at a constant rate of 50Hz.
+
+The dataset was randomly partitioned into two sets, 70% of the volunteers into the training data and 30% into the test data.
+
+
+Data Transformations
+--------------
+
+
+* The training and the test sets were merged to create one data set.
+* Only the measurements of the mean and standard deviation for each measurement were selected. 
+* The activity names (listed above) were used to describe the to name the activities in the data set
+* The column labels were cleaned to provide readable descriptive variable names. 
+* A second, 'tidy data' set was created with the average of each variable grouped by the activity and subject id - motion_data.txt
+
+
+Variable names
+---------------
+
+* subject = the id of the volunteer, reffered to in the subjecttest.txt and subjecttrain.txt files
+* activity = a description of theexercise performed by the subject (walking, walking upstairs, walking downstairs, sitting, standing, laying)
+* All other variables describe either means or standard deviations of different metrics measured and processed by the acceerlometers and gyroscopes in the samsung phones. 
